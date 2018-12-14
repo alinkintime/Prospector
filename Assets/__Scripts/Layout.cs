@@ -64,7 +64,7 @@ public class Layout : MonoBehaviour
             tSD.y = float.Parse(slotsX[i].att("y"));
             tSD.layerID = int.Parse(slotsX[i].att("layer"));
             // This converts the number of the layerID into a text layerName     
-            tSD.layerName = sortingLayerNames[tSD.layerID];              // a 
+            tSD.layerName = sortingLayerNames[tSD.layerID];
 
             switch (tSD.type)
             {

@@ -73,24 +73,8 @@ public class Card : MonoBehaviour
                 case "face":  // if the name is "face" 
                 default:      //  or if it's anything else 
                               // Set it to the middle layer to be above the background   
-                    tSR.sortingOrder = sOrd;// Set it's order to sOrd
+                    tSR.sortingOrder = sOrd + 1;// Set it's order to sOrd
                     continue; // And continue to the next iteration of the loop 
-
-            }
-            // Each of the children of this GameObject are named 
-            // switch based on the names 
-            switch (tSR.gameObject.name)
-            {
-                case "back": // if the name is "back" 
-                             // Set it to the highest layer to cover the other sprites 
-                    tSR.sortingOrder = sOrd + 2;
-                    break;
-
-                case "face":  // if the name is "face" 
-                default:      //  or if it's anything else 
-                              // Set it to the middle layer to be above the background           
-                    tSR.sortingOrder = sOrd + 1;
-                    break;
             }
         }
     }
